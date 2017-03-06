@@ -8,7 +8,7 @@ module.exports = {
       .waitForElementPresent('input#file', 5000)
       .setValue('input#file', filePath)
       .waitForElementPresent('#file-size', 5000)
-      .assert.containsText('#file-size', '0') // 4630
+      .assert.containsText('#file-size', '4630')
       .end()
   }
 }
