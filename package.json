@@ -9,7 +9,6 @@
     "e2e-test": "nightwatch"
   },
   "dependencies": {
-    "http-server": "^0.9.0",
     "nightwatch": "^0.9.12"
   }
 }

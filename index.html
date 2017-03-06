@@ -7,5 +7,18 @@
 </head>
 <body>
   <input id="file" type="file" />
+  <script>
+    function onFileInputChange (e) {
+      var file = e.target.files[0];
+      console.log(file.size, file.name);
+      var fileSizeDiv = document.createElement('div');
+      fileSizeDiv.innerHTML = file.size;
+      fileSizeDiv.id = 'file-size';
+      document.getElementsByTagName('body')[0].appendChild(fileSizeDiv);
+    }
+
+    var fileInput = document.getElementById('file')
+    if (fileInput) fileInput.addEventListener('change', onFileInputChange);
+  </script>
 </body>
 </html>
