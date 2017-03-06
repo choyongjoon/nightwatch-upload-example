@@ -4,7 +4,6 @@
   "description": "Test upload",
   "scripts": {
     "start": "npm run e2e-setup ; npm run e2e-test",
-    "start-server": "http-server",
     "e2e-setup": "docker rm -f selenium-chrome ; docker run -d --name=selenium-chrome -p 4444:4444 selenium/standalone-chrome",
     "e2e-test": "nightwatch"
   },
