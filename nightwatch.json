@@ -1,0 +1,26 @@
+{
+  "src_folders" : ["tests"],
+  "selenium": {
+    "start_process": false
+  },
+  "test_settings": {
+    "default": {
+      "selenium_port": 4444,
+      "selenium_host": "localhost",
+      "silent": true,
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "chromeOptions": {
+          "args": ["start-fullscreen"]
+        }
+      },
+      "screenshots" : {
+        "enabled" : true,
+        "on_failure" : true,
+        "path" : "screenshots"
+      }
+    }
+  }
+}
